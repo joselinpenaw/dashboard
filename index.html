@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workspace Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">◆</div>
+        <div class="brand-text">
+          <span class="brand-name">Workspace</span>
+          <span class="brand-sub">Dashboard</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav"><!-- nav rendered by app.js --></nav>
+
+      <div class="sidebar-footer">
+        <div class="user-chip" data-route="account">
+          <div class="avatar" id="sidebarAvatar">?</div>
+          <div class="user-meta">
+            <span class="user-name" id="sidebarName">Your Name</span>
+            <span class="user-role" id="sidebarRole">Member</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div class="page-title" id="pageTitle">My Dashboard</div>
+        <div class="topbar-actions">
+          <div class="clock-pill" id="clockPill">
+            <span class="dot"></span>
+            <span id="clockPillText">Clocked out</span>
+          </div>
+          <button class="icon-btn" id="themeToggle" title="Toggle theme">◐</button>
+        </div>
+      </header>
+
+      <section class="content" id="content"><!-- view rendered by app.js --></section>
+    </main>
+
+    <div class="scrim" id="scrim"></div>
+  </div>
+
+  <!-- Modal host -->
+  <div class="modal-host" id="modalHost" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card" id="modalCard" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <div class="toast-host" id="toastHost"></div>
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/gmail.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/db.js"></script>
+  <script src="assets/js/esign.js"></script>
+  <script src="assets/js/views.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
