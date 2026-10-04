@@ -116,7 +116,7 @@ python3 -m http.server 8000   # any static server works
 
 Or just open `index.html`. Data persists in `localStorage` under
 `workspace_dashboard_v1`. The seed is a **clean slate** (empty lists, default
-profile name "Noah Morgan"). Use the **theme toggle** (top-right) for light/dark.
+profile name "Joselin"). Use the **theme toggle** (top-right) for light/dark.
 
 If `assets/js/config.js` has no Supabase URL/key (or supabase-js didn't load),
 auth is disabled and the app runs fully local — nothing breaks.

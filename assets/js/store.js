@@ -11,7 +11,7 @@
   function seed() {
     return {
       profile: {
-        name: "Noah Morgan",
+        name: "Joselin",
         title: "Operations Lead",
         email: "",
         phone: "",
